@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    margin: 10px;
+}
+
+
+#menu{
+    flex: 1;
+    display: grid;
+}
+.menu_item{
+    height: 200px;
+    width: 200px;
+    margin: 25px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: aquamarine;
+    align-content: center;
+    text-align: center;
+}

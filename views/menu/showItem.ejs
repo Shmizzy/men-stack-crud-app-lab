@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= item.name %></title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1><%= item.name %></h1>
+    <h3>Price: $<%= item.price %></h3>
+    <form action="/menu/<%= item._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete <%= item.name %></button>
+    </form>
+    <a href="/menu/<%= item._id %>/edit"><button>Edit <%= item.name %></button></a>
+    <a href="/menu"><Button>Back to menu</Button></a>
+</body>
+</html>
